@@ -1,19 +1,22 @@
 @import url("reset.css");
 /* This is a custom font from google fonts */
-@import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa:wght@700&family=Fredoka:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa:wght@700&family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 /* what is :root? https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
 :root {
   /* Define design variables */
-  --color-primary: #2b2d42;
-  --color-secondary: #bfc6d2;
-  --color-background: #f5f5f5;
-  --color-accent: #535bf2;
+  --color-primary: #E3826F;
+  --color-secondary: #A0ACC6;
+  --color-background: #F6E4D7;
+  --color-accent: #E4A9A4
+  ;
 
   --border-radius: 0.5rem;
 
-  --font-titles: "Frank Ruhl Libre", serif;
-  --font-body: system-ui, sans-serif; /* system-ui matches the user's system font */
+  --font-titles: "Fredoka", serif;
+  --font-body:"Nunito", system-ui, sans-serif; /* system-ui matches the user's system font */
 }
 
 body {
@@ -25,6 +28,7 @@ body {
 /* Layout */
 main {
   padding: 2rem;
+  display: flex;
 }
 
 header {
@@ -33,7 +37,8 @@ header {
 
 main,
 header,
-nav {
+nav,
+div,footer {
   max-width: 60rem;
   margin: 0 auto;
 }
@@ -155,4 +160,109 @@ fieldset {
   &:active {
     filter: brightness(80%);
   }
+}
+
+/*******************************************************************************************/
+
+.container {
+  
+  border: 0.1rem solid black; /* Border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 1rem; /* Padding inside the div */
+  background-color: #f9f9f9; /* Light background color */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.about-me-container {
+  display: flex; /* Flex container for About Me and Image */
+  margin-bottom: 1rem; /* Space below this section */
+}
+
+.image-container {
+  flex: 0 0 auto; /* Prevent the image from growing */
+  margin-left: 1rem;
+}
+
+.image-container img {
+  width: auto; /* Adjust the image width */
+  height: 22rem; /* Maintain aspect ratio */
+  border-radius: 8px; /* Optional: round the image corners */
+}
+
+.about-me {
+  flex: 1; /* Allow this to grow and take remaining space */
+}
+
+/* Additional styles for headers */
+.underline {
+  text-decoration: underline;
+  font-weight: bold; /* Make it bold */
+  color: #2c3e50; /* Darker color for better contrast */
+}
+
+.skills-list {
+  list-style-type: disc; /* Use default bullet style */
+  padding-left: 20px; /* Add padding to the left for bullets */
+  display: flex; /* Use flexbox for inline display */
+  flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+}
+
+.skills-list li {
+  margin-right: 1rem; /* Space between list items */
+  display: inline; /* Make list items inline */
+}
+
+.projects-container {
+  display: flex;
+  justify-content: center; /* Center the link */
+  padding: 1rem; /* Padding around the container */
+  margin-top: 1rem; /* Add space above the container */
+  background-color: #f0f0f0; /* Light background color */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.projects-container a {
+  color: #333; /* Link text color */
+  font-size: 1.1rem; /* Increase font size */
+  font-weight: bold; /* Bold text for emphasis */
+  text-decoration: none; /* Remove underline */
+  padding: 0.5rem 1rem; /* Padding around the link text */
+  border-radius: 4px; /* Rounded corners on the link itself */
+  background-color: #e0e7ff; /* Light blue background for link */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.projects-container a:hover {
+  background-color: #c7d2fe; /* Darker blue on hover */
+}
+
+body {
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+}
+
+.dark-mode-container {
+  text-align: center; /* Center the button */
+  margin: 1rem 0; /* Space around the container */
+}
+
+button {
+  padding: 0.5rem 1rem; /* Padding for the button */
+  font-size: 1rem; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white; /* White text */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+footer {
+  padding: 1rem; /* Space inside footer */
+  background-color: #f8f9fa; /* Light background for footer */
+  text-align: center; /* Centered text */
+  border-top: 1px solid #ddd; /* Top border for separation */
 }
