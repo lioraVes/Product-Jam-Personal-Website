@@ -162,20 +162,17 @@ fieldset {
   }
 }
 
-/*******************************************************************************************/
 
 .container {
   
-  border: 0.1rem solid black; /* Border */
   border-radius: 8px; /* Rounded corners */
   padding: 1rem; /* Padding inside the div */
-  background-color: #f9f9f9; /* Light background color */
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  background-color: #fbf1e9; 
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
 }
 
 .about-me-container {
-  display: flex; /* Flex container for About Me and Image */
-  margin-bottom: 1rem; /* Space below this section */
+  display: flex;
 }
 
 .image-container {
@@ -184,26 +181,14 @@ fieldset {
 }
 
 .image-container img {
-  width: auto; /* Adjust the image width */
-  height: 22rem; /* Maintain aspect ratio */
-  border-radius: 8px; /* Optional: round the image corners */
-}
-
-.about-me {
-  flex: 1; /* Allow this to grow and take remaining space */
-}
-
-/* Additional styles for headers */
-.underline {
-  text-decoration: underline;
-  font-weight: bold; /* Make it bold */
-  color: #2c3e50; /* Darker color for better contrast */
+  width: auto;
+  height: 22rem; 
+  border-radius: 8px; 
 }
 
 .skills-list {
-  list-style-type: disc; /* Use default bullet style */
+  display: flex; 
   padding-left: 20px; /* Add padding to the left for bullets */
-  display: flex; /* Use flexbox for inline display */
   flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
 }
 
@@ -215,54 +200,116 @@ fieldset {
 .projects-container {
   display: flex;
   justify-content: center; /* Center the link */
-  padding: 1rem; /* Padding around the container */
-  margin-top: 1rem; /* Add space above the container */
-  background-color: #f0f0f0; /* Light background color */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 1rem; 
+  margin-top: 1rem; 
+  background-color: #fbf1e9; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 .projects-container a {
-  color: #333; /* Link text color */
-  font-size: 1.1rem; /* Increase font size */
-  font-weight: bold; /* Bold text for emphasis */
+  color: #333;
+  font-size: 1.1rem; 
+  font-weight: bold; 
   text-decoration: none; /* Remove underline */
   padding: 0.5rem 1rem; /* Padding around the link text */
   border-radius: 4px; /* Rounded corners on the link itself */
-  background-color: #e0e7ff; /* Light blue background for link */
   transition: background-color 0.3s ease; /* Smooth hover effect */
 }
 
 .projects-container a:hover {
-  background-color: #c7d2fe; /* Darker blue on hover */
+  background-color: #e6a296;
 }
 
 body {
   transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
 }
 
-.dark-mode-container {
-  text-align: center; /* Center the button */
-  margin: 1rem 0; /* Space around the container */
-}
 
 button {
-  padding: 0.5rem 1rem; /* Padding for the button */
-  font-size: 1rem; /* Font size */
-  cursor: pointer; /* Pointer cursor on hover */
-  border: none; /* Remove default border */
-  border-radius: 5px; /* Rounded corners */
-  background-color: #007bff; /* Bootstrap primary color */
-  color: white; /* White text */
+  background-color: #f1c4b6; /* Initial color */
+  color: #333; /* Text color for contrast */
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 button:hover {
-  background-color: #0056b3; /* Darker blue on hover */
+  background-color: #e6a296; /* Hover color */
 }
 
+.dark-mode-container {
+  text-align: center; /* Center the button */
+}
+
+#dark-mode-icon {
+  width: 20px;
+  height: 20px;
+}
+
+
+#dark-mode-toggle {
+  display: inline-flex;
+  align-items: center; /* Vertically center the icon and text */
+  gap: 8px; /* Space between icon and text */
+  background-color: #f1c4b6;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#dark-mode-toggle:hover {
+  background-color: #e6a296; /* Hover color */
+}
 footer {
-  padding: 1rem; /* Space inside footer */
-  background-color: #f8f9fa; /* Light background for footer */
-  text-align: center; /* Centered text */
-  border-top: 1px solid #ddd; /* Top border for separation */
+  text-align: center;
+  padding: 20px;
+  background-color: #fbf1e9; /* Light grey background */
+  font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  border-radius: 8px; /* Rounded corners */
+
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-links img {
+  width: 30px; /* Adjust size as needed */
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+.social-links img:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* Dark mode styling */
+.dark-mode {
+  background-color: #2c3e50; /* Dark background */
+  color: #ecf0f1; /* Light text color */
+}
+
+.dark-mode .container, .dark-mode .projects-container, .dark-mode a,.dark-mode footer {
+  background-color: #34495e; /* Darker background for containers */
+  color: #ecf0f1;
+}
+
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
 }

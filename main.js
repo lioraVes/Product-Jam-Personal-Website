@@ -1,19 +1,20 @@
 console.log("Hello World!");
-setupCounter();
 
-function setupCounter() {
-  let count = 0;
+// JavaScript to handle dark mode toggle
+document.getElementById("dark-mode-toggle").addEventListener("click", function () {
+  const body = document.body;
+  const icon = document.getElementById("dark-mode-icon");
+  const text = document.getElementById("dark-mode-text");
 
-  function increment() {
-    count++;
-    document.querySelector("#count").innerHTML = count;
+  // Toggle dark mode class on the body
+  body.classList.toggle("dark-mode");
+
+  // Switch icon and text based on current theme
+  if (body.classList.contains("dark-mode")) {
+    icon.src = "sun_icon.png";
+    text.textContent = "Switch to Light Mode";
+  } else {
+    icon.src = "moon_icon.png";
+    text.textContent = "Switch to Dark Mode";
   }
-
-  function decrement() {
-    count--;
-    document.querySelector("#count").innerHTML = count;
-  }
-
-  document.querySelector("#increment").addEventListener("click", increment);
-  document.querySelector("#decrement").addEventListener("click", decrement);
-}
+});
