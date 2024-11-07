@@ -13,61 +13,63 @@
       <h1>My Projects</h1>
     </header>
     <br>
-    <div class="projects-container">
-      <!-- Project 1 -->
-      <div class="project-card" onclick="window.open('https://github.com/orgs/VolunTimeApp/repositories', '_blank')">
-        <img src="/public/Voluntime_logo.png" alt="VolunTime Logo">
-        <div class="overlay">
-          <h3>VolunTime</h3>
-          <p>Android app for finding volunteer positions, developed during HUJI's 2023 Hackathon. Simulates & rates performance with AI.</p>
-        </div>
-      </div>
+    <div class="cards-container">
+      <a href="https://github.com/orgs/VolunTimeApp/repositories" class="card">
+          <img src="/public/Voluntime_logo.png" alt="VolunTime">
+          <div class="description">
+              <h3>VolunTime</h3>
+              <p>VolunTime is an Android app developed during HUJI's 2023 Hackathon. It helps users find Volunteer Positions and rates users' performances using AI.</p>
+          </div>
+      </a>
+      
+      <a href="https://github.com/lioraVes/Sumplete-Solver-AI" class="card">
+          <img src="/public/Sumplete_icon.png" alt="Sumplete Solver">
+          <div class="description">
+              <h3>Sumplete Solver</h3>
+              <p>An AI solver for the Sumplete game, solving with Hill-Climbing and Backtracking using heuristics.</p>
+          </div>
+      </a>
+      
+      <a href="https://github.com/lioraVes/WaterTracker" class="card">
+          <img src="/public/WaterTracker_icon.png" alt="WaterTracker">
+          <div class="description">
+              <h3>WaterTracker</h3>
+              <p>WaterTracker is a web app that helps users keep track of water intake, built using React.</p>
+          </div>
+      </a>
+
+      <a href="https://github.com/lioraVes/TicTacToe-GUI" class="card">
+          <img src="/public/TicTacToe_icon.png" alt="TicTacToe">
+          <div class="description">
+              <h3>TicTacToe</h3>
+              <p>A simple TicTacToe game made with Python's Tkinter. Supports two players and calculates the winner at the end of each round.</p>
+          </div>
+      </a>
+
+      <a href="https://github.com/lioraVes/OOP" class="card">
+          <img src="/public/OOP_icon.png" alt="OOP Projects">
+          <div class="description">
+              <h3>OOP Projects</h3>
+              <p>Introduction to Object-Oriented Programming course exercises.</p>
+          </div>
+      </a>
+
+      <a href="https://github.com/lioraVes/Programming-Workshop-C-CPP" class="card">
+          <img src="/public/C_CPP_logo.png" alt="C/C++ Projects">
+          <div class="description">
+              <h3>C/C++ Projects</h3>
+              <p>Programming Workshop in C & C++ course exercises.</p>
+          </div>
+      </a>
+  </div><br>
+  <div class="dark-mode-container">
+    <button id="dark-mode-toggle">
+      <span id="dark-mode-text">Switch to Dark Mode</span>  
+      <img id="dark-mode-icon" src="public/moon_icon.png" alt="Toggle dark mode" />
+    </button>
+  </div>
+  <br>
   
-      <!-- Project 2 -->
-      <div class="project-card" onclick="window.open('https://github.com/lioraVes/Sumplete-Solver-AI', '_blank')">
-        <img src="/public/Sumplete_icon.png" alt="Sumplete Solver Logo">
-        <div class="overlay">
-          <h3>Sumplete Solver</h3>
-          <p>AI solver for the Sumplete game, solving with Hill-Climbing and Backtracking with heuristics.</p>
-        </div>
-      </div>
-  
-      <!-- Project 3 -->
-      <div class="project-card" onclick="window.open('https://github.com/lioraVes/WaterTracker', '_blank')">
-        <img src="/public/WaterTracker_icon.png" alt="WaterTracker Logo">
-        <div class="overlay">
-          <h3>WaterTracker</h3>
-          <p>Web app to track daily water intake, built with React.</p>
-        </div>
-      </div>
-  
-      <!-- Project 4 -->
-      <div class="project-card" onclick="window.open('https://github.com/lioraVes/TicTacToe-GUI', '_blank')">
-        <img src="/public/TicTacToe_icon.png" alt="TicTacToe Logo">
-        <div class="overlay">
-          <h3>TicTacToe</h3>
-          <p>Python Tkinter GUI game, with two-player support, winner detection, and responsive design.</p>
-        </div>
-      </div>
-  
-      <!-- Project 5 -->
-      <div class="project-card" onclick="window.open('https://github.com/lioraVes/OOP', '_blank')">
-        <img src="/public/OOP_icon.png" alt="OOP Projects Logo">
-        <div class="overlay">
-          <h3>OOP Projects</h3>
-          <p>Exercises from the Intro to Object-Oriented Programming course.</p>
-        </div>
-      </div>
-  
-      <!-- Project 6 -->
-      <div class="project-card" onclick="window.open('https://github.com/lioraVes/Programming-Workshop-C-CPP', '_blank')">
-        <img src="/public/C_CPP_logo.png" alt="C/C++ Projects Logo">
-        <div class="overlay">
-          <h3>C/C++ Projects</h3>
-          <p>Programming exercises from the Workshop in C & C++ course.</p>
-        </div>
-      </div>
-    </div>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
