@@ -5,17 +5,16 @@
 /* what is :root? https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
 :root {
   /* Define design variables */
-  --color-primary: #E3826F; /*text color*/
-  --color-secondary: #A0ACC6; /*line in elements */
-  --color-background: #F6E4D7;/* background color */
-  --color-accent: #E4A9A4; /*links color in elements*/
-  --light-hover-background: #e6a296;
-  --div-light-background:#fbf1e9;
+  --color-primary: #1a4568; /*text color*/
+  --color-background: #dbecf4;/* background color */
+  --color-accent: #245f8e; /*links color*/
+  --light-hover-background: #3e6788;
+  --div-light-background:#f9f9f9;
+  --button-bacground: #a9d0ea;
   --dark-background:#1C2833;
   --dark-mode-text-color:#F5F5F5;
   --dark-mode-container-background:#2E4053;
   --dark-mode-hover-background:#3B4C63;
-  --button-bacground: #f1c4b6;
   --border-radius: 0.8rem;
   --softer-border-radius: 0.4rem;
 
@@ -49,14 +48,6 @@ footer {
   margin: 0 auto;
 }
 
-article,
-nav {
-  padding: 1rem 0;
-}
-
-.rtl {
-  direction: rtl;
-}
 
 /* Text */
 p {
@@ -108,11 +99,6 @@ h6 {
   font-size: 0.83em;
 }
 
-blockquote {
-  padding-left: 1rem;
-  border-left: 2px solid var(--color-secondary);
-}
-
 /* Links */
 a {
   color: var(--color-accent);
@@ -122,51 +108,6 @@ a:hover {
   text-decoration: none;
 }
 
-/* Tables */
-table {
-  margin-top: 1.5rem;
-  border-spacing: 0px;
-  border-collapse: collapse;
-}
-table td,
-table th {
-  padding: 0.5rem;
-  border: 1px solid var(--color-secondary);
-}
-
-/* Forms */
-input,
-button,
-textarea,
-select {
-  padding: 0.2em 0.5em;
-  border: 1px solid var(--color-secondary);
-  border-radius: var(--border-radius);
-}
-
-fieldset {
-  margin-top: 1.5rem;
-  border: 1px solid var(--color-secondary);
-}
-
-.counter-button {
-  background-color: var(--color-accent);
-  width: 2rem;
-  height: 2rem;
-  color: white;
-  border: none;
-  border-radius: 1000px; /* Make the button round */
-  cursor: pointer;
-  font-weight: bold;
-
-  &:hover {
-    filter: brightness(120%);
-  }
-
-  &:active {
-    filter: brightness(80%);
-  }
-}
 /*****************************main page css********************************************************/
 
 .container {
@@ -208,7 +149,7 @@ fieldset {
   justify-content: center; 
   padding: 1rem; 
   margin-top: 1rem; 
-  background-color: #fbf1e9; 
+  background-color: var(--div-light-background); 
   border-radius: var(--border-radius); 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
