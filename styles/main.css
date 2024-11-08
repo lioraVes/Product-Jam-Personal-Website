@@ -11,13 +11,9 @@
   --color-accent: #E4A9A4; /*links color in elements*/
   --light-hover-background: #e6a296;
   --div-light-background:#fbf1e9;
-  /* --dark-background:#2c3e50; */
   --dark-background:#1C2833;
   --dark-mode-text-color:#F5F5F5;
-  /* --dark-mode-text-color:#ecf0f1; */
-  /* --dark-mode-container-background:#34495e; */
   --dark-mode-container-background:#2E4053;
-  /* --dark-mode-hover-background:#3a506b; */
   --dark-mode-hover-background:#3B4C63;
   --button-bacground: #f1c4b6;
   --border-radius: 0.8rem;
@@ -192,7 +188,9 @@ fieldset {
 .image-container img {
   width: auto;
   height: 22rem; 
-  border-radius: var(--border-radius); 
+  border-radius: var(--border-radius);
+  filter: drop-shadow(0px 0px 2px rgba(255, 255, 255, 0.6));
+ 
 }
 
 .skills-list {
@@ -363,7 +361,7 @@ footer p {
 
 .card:hover img {
   transform: translateY(-10px) scale(0.95); 
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.6); 
+  filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.6));
 
 }
 
@@ -398,4 +396,8 @@ footer p {
 
 .dark-mode .description p {
   color: lightgray;
+}
+
+.my-projects-header{
+  text-align: center;
 }
